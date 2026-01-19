@@ -1,0 +1,41 @@
+:root {
+  color-scheme: light;
+  --font-sans: "Space Grotesk", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+
+  --color-ink: #0f172a;
+  --color-muted: #5b6579;
+  --color-surface: #f6f4f1;
+  --color-panel: #ffffff;
+  --color-border: #d6d2ca;
+  --color-accent: #0f766e;
+  --color-accent-strong: #0b4f4a;
+  --color-warning: #b45309;
+  --color-danger: #b42318;
+  --color-success: #047857;
+
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 40px;
+  --space-3xl: 56px;
+
+  --shadow-sm: 0 8px 20px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 16px 40px rgba(15, 23, 42, 0.12);
+
+  --header-height: 72px;
+  --sidebar-width: 240px;
+  --sidebar-width-collapsed: 200px;
+  --content-max: 1200px;
+
+  --transition-fast: 160ms ease;
+  --transition-med: 260ms ease;
+}

@@ -1,0 +1,7 @@
+.orden-form .section-title {
+  margin-bottom: var(--space-sm);
+}
+
+.orden-form .field + .field {
+  margin-top: var(--space-sm);
+}

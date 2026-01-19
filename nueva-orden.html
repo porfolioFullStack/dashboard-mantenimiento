@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alta de Orden - Dashboard de Mantenimiento</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header-inner">
+        <h1 class="page-title">Alta de Orden</h1>
+        <div class="header-actions">
+          <a class="btn btn-secondary" href="index.html">Volver al tablero</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navegacion principal">
+        <div class="sidebar-brand">
+          <span class="brand-title">Mantenimiento</span>
+        </div>
+        <nav class="sidebar-nav">
+          <a class="sidebar-link" href="index.html">Tablero</a>
+          <a class="sidebar-link is-active" href="nueva-orden.html">Alta de orden</a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <form class="orden-form" id="orden-form" novalidate>
+          <section class="form-section">
+            <h2 class="section-title">Datos principales</h2>
+
+            <label class="field">
+              <span class="field-label">Titulo</span>
+              <input type="text" id="orden-titulo" name="titulo" required minlength="6" maxlength="80" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Descripcion</span>
+              <textarea id="orden-descripcion" name="descripcion" required minlength="10" maxlength="500"></textarea>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Ubicacion</span>
+              <input type="text" id="orden-ubicacion" name="ubicacion" required minlength="3" maxlength="80" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Solicitante</span>
+              <input type="text" id="orden-solicitante" name="solicitante" required minlength="3" maxlength="60" />
+            </label>
+          </section>
+
+          <section class="form-section">
+            <h2 class="section-title">Planificacion</h2>
+
+            <label class="field">
+              <span class="field-label">Prioridad</span>
+              <select id="orden-prioridad" name="prioridad" required>
+                <option value="">Seleccionar</option>
+                <option value="baja">Baja</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Responsable</span>
+              <input type="text" id="orden-responsable" name="responsable" maxlength="60" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Fecha programada</span>
+              <input type="date" id="orden-fecha-programada" name="fechaProgramada" />
+            </label>
+          </section>
+
+          <section class="form-section">
+            <h2 class="section-title">Notas</h2>
+
+            <label class="field">
+              <span class="field-label">Notas internas</span>
+              <textarea id="orden-notas" name="notas" maxlength="500"></textarea>
+            </label>
+          </section>
+
+          <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Crear orden</button>
+            <button class="btn btn-secondary" type="reset">Limpiar</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.board {
+  margin-top: var(--space-xl);
+}
+
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-sm);
+}
+
+.board-count {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  .board-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
