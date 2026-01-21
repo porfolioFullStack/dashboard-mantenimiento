@@ -32,7 +32,10 @@ Proyecto estatico, sin dependencias.
 
 Recomendado:
 - abrir con Live Server desde VSCode
-- archivo inicial: `index.html`
+- archivo inicial: `index.html`  
+
+## Pagina de Navegacion  
+https://porfoliofullstack.github.io/dashboard-mantenimiento/
 
 ---
 
